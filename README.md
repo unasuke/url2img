@@ -5,6 +5,12 @@
 $ curl -v -X POST --header "Content-Type: application/json" --data '{"url": "https://example.com, "size": {"width": 2400, "height": 1260 }}' http://function-url --output ogp.png
 ```
 
+## Deploy
+```shell
+$ gcloud functions deploy url2img --runtime nodejs10 --trigger-http --region asia-northeast1 --entry-point screenshot
+
+```
+
 ## References
 - [Introducing headless Chrome support in Cloud Functions and App Engine | Google Cloud Blog](https://cloud.google.com/blog/products/gcp/introducing-headless-chrome-support-in-cloud-functions-and-app-engine)
 - [HTTP Functions  |  Cloud Functions Documentation  |  Google Cloud](https://cloud.google.com/functions/docs/writing/http)
