@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "@google-cloud/functions-framework": "^1.2.1"
+  }
+}
