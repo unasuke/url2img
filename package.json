@@ -1,5 +1,11 @@
 {
+  "scripts": {
+    "start": "functions-framework --target=screenshot"
+  },
   "devDependencies": {
     "@google-cloud/functions-framework": "^1.2.1"
+  },
+  "dependencies": {
+    "puppeteer": "^1.19.0"
   }
 }
